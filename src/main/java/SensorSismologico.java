@@ -9,7 +9,7 @@ public class SensorSismologico {
 
         while(true){
             try {
-                dias = scanner.nextInt();
+                dias = validarIngreso();
             }catch(InputMismatchException e) {
                 continue;
             }
