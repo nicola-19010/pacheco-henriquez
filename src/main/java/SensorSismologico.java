@@ -13,7 +13,7 @@ public class SensorSismologico {
         int opcionMenu = validarIngreso();
     }
 
-    private static void opcionesMenu(int opcion,){
+    private static void opcionesMenu(int opcion){
         switch (opcion){
             case 1:
             case 2:
