@@ -34,11 +34,11 @@ public class SensorSismologico {
             case 1:
             case 2:
             case 3:
-                calcularMasDe4Sismos();
+                hayAlertaDeEscalada();
         }
     }
 
-    public static int [] calcularMasDe4Sismos(double [][] matrizLlena, int dias) {
+    public static int [] hayAlertaDeEscalada(double [][] matrizLlena, int dias) {
         int aux;
         int vecesPorDia = 0;
         int [] matrizMayorCuatro = new int [dias];
