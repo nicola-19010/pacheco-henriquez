@@ -4,22 +4,6 @@ import java.math.RoundingMode;
 import java.util.InputMismatchException;
 
 public class SensorSismologico {
-    private static int pedirDias() {
-        int dias;
-
-        while(true){
-            try {
-                dias = validarIngreso();
-            }catch(InputMismatchException e) {
-                continue;
-            }
-
-            if(dias > 1 && dias < 32) {
-                return dias;
-            }
-        }
-    }
-
     private static void MostrarMenu() {
         System.out.println("------MENU------");
         System.out.println("1. ¿Qué intensidad, qué día y a qué hora ocurrió el sismo?");
