@@ -60,12 +60,9 @@ public class SensorSismologico {
     }
 
     private static void opcionesSalirDelSistema(int opcionIngresada){
-        switch (opcionIngresada){
-            case 1:
-                System.out.println("Ha salido del sistema.");
-                break;
-            case 2:
-                mostrarMenu();
+        switch (opcionIngresada) {
+            case 1 -> System.out.println("Ha salido del sistema.");
+            case 2 -> mostrarMenu();
         }
     }
 }
