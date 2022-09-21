@@ -38,14 +38,14 @@ public class SensorSismologico {
         }
     }
 
-    public static int [] calcularMasDe4Sismos(double [][] matrizRellena, int dias) {
+    public static int [] calcularMasDe4Sismos(double [][] matrizLlena, int dias) {
         int aux;
         int vecesPorDia = 0;
         int [] matrizMayorCuatro = new int [dias];
 
-        for(int i = 0; i < matrizRellena.length; i++) {
-            for(int j = 0; j < matrizRellena[i].length; j++ ) {
-                if(matrizRellena[i][j] >= 4.0) {
+        for(int i = 0; i < matrizLlena.length; i++) {
+            for(int j = 0; j < matrizLlena[i].length; j++ ) {
+                if(matrizLlena[i][j] >= 4.0) {
                     vecesPorDia++;
                 }
             }
@@ -56,7 +56,6 @@ public class SensorSismologico {
 
         return matrizMayorCuatro;
     }
-
     private static int validarIngreso() {
         Scanner teclado = new Scanner(System.in);
         int entrada;
