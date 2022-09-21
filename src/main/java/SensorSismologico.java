@@ -7,10 +7,7 @@ public class SensorSismologico {
     private static int pedirDias() {
         int dias;
 
-        while(true) {
-            System.out.println("Por favor ingrese la cantidad de días");
-            Scanner scanner = new Scanner(System.in);
-
+        while(true){
             try {
                 dias = scanner.nextInt();
             }catch(InputMismatchException e) {
