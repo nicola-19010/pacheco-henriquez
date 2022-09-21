@@ -70,11 +70,33 @@ public class SensorSismologico {
         return matrizRellena;
     }
 
-    private double[] BuscarSismoMasIntenso(double matrizRellena[][]){
+    private void BuscarSismoMasIntenso(double matrizRellena[][]){
         for (int i = 0; i < matrizRellena.length; i++) {
+
+            double mayor = matrizRellena[0][0];
             for (int j = 0; j < matrizRellena[i].length; j++) {
-                m
+                double numeroActual = matrizRellena[i][j];
+                if (numeroActual > mayor)
+                    mayor = numeroActual;
+            }
+
+            System.out.println("El simo mas intenso ocurrio el: ");
+            //System.out.println("Dia : " + i);
+            //System.out.println("Hora: " + j);
+            System.out.println("Intensidad: " + mayor);
+        }
+    }
+
+    private static void BuscarSismosMayorOIgualesA55(double[][] MatrizRellena){
+        int contador = 0;
+        for (int  i = 0; i < MatrizRellena.length; i++){
+            for (int j = 0; j < MatrizRellena[i].length; j++){
+                if (MatrizRellena[i][j] >= 5.5){
+                    contador ++;
+                }
             }
         }
+        System.out.println("La cantidad de sismos mayores a 5.5  es: " + contador);
+
     }
 }

@@ -7,10 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pacheco-henriquez" />
+        <module name="Taller__02" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="pacheco-henriquez" target="18" />
-    </bytecodeTargetLevel>
   </component>
 </project>
