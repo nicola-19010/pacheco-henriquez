@@ -1,14 +1,27 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SensorSismologico {
     public static void main(String[] args) {
-        double gradoSismoSinTruncar = ( (Math.random() * ( 9.5 - 0.5 )) + 0.5);
 
 
+        imprimirMatriz(rellenarMatriz(10));
+    }
 
+    private static void imprimirMatriz(double[][] matriz){
+        /*for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.println(matriz[i][j] + " ");
+            }
+        } */
+
+        for (int i = 0; i < matriz.length; i++) {
+                System.out.println(Arrays.toString(matriz[i]));
+        }
 
     }
 
@@ -31,6 +44,7 @@ public class SensorSismologico {
         if (entrada < 1 || entrada > 365){
             return validarIngreso();
         }else {
+            System.out.println("Error, ha ingresado una cantidad de dias invalida");
             return entrada;
         }
     }
@@ -54,5 +68,13 @@ public class SensorSismologico {
             }
         }
         return matrizRellena;
+    }
+
+    private double[] BuscarSismoMasIntenso(double matrizRellena[][]){
+        for (int i = 0; i < matrizRellena.length; i++) {
+            for (int j = 0; j < matrizRellena[i].length; j++) {
+                m
+            }
+        }
     }
 }
