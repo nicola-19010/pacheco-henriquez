@@ -4,7 +4,7 @@ import java.math.RoundingMode;
 import java.util.InputMismatchException;
 
 public class SensorSismologico {
-    private static void MostrarMenu() {
+    private static void mostrarMenu() {
         System.out.println("------MENU------");
         System.out.println("1. ¿Qué intensidad, qué día y a qué hora ocurrió el sismo?");
         System.out.println("2. ¿Cuántos días en total se registraron sismos >= 5.5 grados?");
