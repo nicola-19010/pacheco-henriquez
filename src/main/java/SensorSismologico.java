@@ -6,6 +6,7 @@ import java.util.InputMismatchException;
 public class SensorSismologico {
     public static void main(String[] args) {
         mostrarMenu();
+
     }
 
     private static void mostrarMenu() {
